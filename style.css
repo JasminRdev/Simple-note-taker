@@ -1,0 +1,237 @@
+:root{
+--base: #F2ECD8;
+--brown: #732C02;
+--skin: #A6775B90;
+--accent:#BF3604;
+--darkred: #59120290;
+}
+
+body{
+    background: var(--skin);
+    background-image: url("https://www.transparenttextures.com/patterns/grid-me.png");
+    color: var(--brown);
+    font-family: 'Short Stack', cursive;
+}
+
+#forms{
+    display: grid;
+    text-align: center;
+}
+
+#forms > * {
+    margin: 10px;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    font-family: 'Short Stack', cursive;
+}
+
+h1{
+    font-size: 3rem;
+    padding-top: 7%;
+}
+
+#forms label{
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+
+
+header{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.add-note{
+    cursor: pointer;
+    background-color: var(--skin);
+    color: var(--base);
+}
+
+.add-note:hover{
+    opacity: 0.8;
+    box-shadow: 2px 2px 5px #732C0290 ;
+}
+
+.add-note:active{
+    opacity: 0.6;
+    box-shadow: 2px 2px 5px #732C0240 ;
+}
+
+
+/* section */
+.content{
+    border: var(--brown) 1px solid;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+
+table td{
+    display: grid;
+    width: 400px;
+    }
+
+.content input{
+    border: none;
+    border-radius: 5px;
+    padding: 5%;
+    margin-bottom: 5px;
+    font-family: 'Short Stack', cursive;
+}
+
+h2{
+    font-size: 2rem;
+    width: min-content;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 50px;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent);
+}
+
+.show-view{
+    background-color: var(--darkred);
+    color: var(--base);
+}
+
+.show-view:hover{
+    opacity: 0.8;
+    box-shadow: 2px 2px 5px #732C0290 ;
+}
+
+.show-view:active{
+    opacity: 0.6;
+    color: var(--base);
+    box-shadow: 2px 2px 5px #732C0240;
+}
+
+#submit_view button{
+    font-family: 'Short Stack', cursive;
+    margin: 0 auto;
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.note-list > *{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+}
+
+@media only screen and (max-width: 600px) {
+    .note-list > * {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    table td{
+        width: 90%;
+    }
+
+    .content{
+        margin-bottom: 5px;
+    }
+
+    header{
+        width: 90%;
+    }
+
+    h2{
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+
+    form .title-pop{
+        width: 80%;
+     }
+    
+    form .popup{
+        width: 90%;
+        height: 80%;
+    }
+}
+
+/* pop up */
+.container-popup {
+    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.8);
+}
+
+.popup {
+    width: 80%;
+    height: 50%;
+    background: var(--base);
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    gap: 20px
+    padding-bottom: 25px;
+}
+
+
+.popup > *{
+    font-family: 'Short Stack', cursive;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: inherit;
+}
+ .popup button {
+    border: 2px solid var(--darkred);
+    margin-bottom: 15px;
+ }
+
+
+.title-pop{
+    position: relative;
+    margin-top: 50px;
+    color: var(--accent);
+    font-size: 2rem;
+    text-align: center;
+    width: fit-content;
+}
+
+.note-pop{
+    width: 80%;
+}
+
+.popup button {
+    width: 100px;
+    background-color: var(--skin);
+    color: var(--base);
+    cursor: pointer;
+}
+
+ button:hover{
+    opacity: 0.8;
+    color: var(--brown);
+    box-shadow: 2px 2px 5px #732C0290 ;
+}
+
+ button:active{
+    opacity: 0.6;
+    color: var(--brown);
+    box-shadow: 2px 2px 5px #732C0240 ;
+}

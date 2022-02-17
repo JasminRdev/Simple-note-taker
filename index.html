@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+        <title>Simple note tacker</title>
+</head>
+<body>
+
+    <header>
+        <h1>Simple note taker</h1>
+        <form id="forms">
+            <label>Title</label>
+            <input
+            type="text"
+            id="title_new"
+            placeholder="Book summary of 'The power of habit'"
+            /> 
+            <label>Enter your note</label>        
+            <textarea  
+            id="note_new" 
+            cols="50" 
+            rows="5">
+           </textarea>
+           <input 
+           type="submit" 
+           class="add-note"
+           value="Add note"
+           />
+        </form>
+    </header>
+
+    <main>
+        <section class="note-list">
+            <h2>Note</h2>
+            <div id="notes">
+                <!-- might change the form in id and not in content class -->
+                <!-- <div class="content">
+                    <form id="submit_view">
+                   <table>
+                    <tr>
+                        <td>
+                            <input 
+                            type="text"
+                            class="title"
+                            value="soon title"
+                            readonly
+                            />
+                        </td>
+                        <td>
+                            <input 
+                           type="text"
+                           class="note"
+                           value="soon some textsoon some textsoon some textsoon some textsoon some textsoon some textsoon some textsoon some text"
+                           readonly
+                           />
+                        </td>
+                    </tr>
+                   </table>
+                   <input 
+                   type="submit"
+                   class="show-view"
+                   value="View details"
+                   />
+
+                   <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+                </form>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <!-- <form id="from_pop">
+    <div class="container-popup">
+        <div class="popup">
+            <div 
+            class="title-pop"
+            >ewsrfkmgsrögnrkdfmgkfösngkwskön</div>
+            <div 
+            class="note-pop"
+            >note pop soonnote pop soonote pop soonnote pop soonote pop soonnote pop soonote pop soonnote pop soonote pop soonnote pop soo
+        </div>
+        
+            <button>x</button>
+            </div>
+    </div>
+</form> -->
+    
+</body>
+<script src="index.js"></script>
+</html>
